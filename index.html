@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Banking Form</title>
+		<link rel="stylesheet" type="text/css" href="validation.css">
+
+	</head>
+	<body>
+		<header>
+			<h1>ACME BANKING FORM</h1>
+		</header>
+
+			<p>Enter your information in the text fields:</p>
+
+			<h4>Applicant's Personal Information</h4>
+
+			<form action="/action_page.php">
+			  <input type="text" name="firstname" placeholder="First Name">  
+			  <input type="text" name="mi" placeholder="Middle Initial">  
+			  <input type="text" name="lastname" placeholder="Last Name">
+			  <br><br>
+			  <input type="text" name="apStreet" placeholder="Street Address">  
+			  <input type="text" name="apCity" placeholder="City">  
+			  <input type="text" name="apState" placeholder="State">
+			  <input type="text" name="apZip" placeholder="Zip Code">
+			  <br><br>
+			  </form>
+			  
+			  <form class="validate"><!--validate input via CSS-->
+			  	Required Information:
+			  	<br>
+			  	<label for="1">Phone:  </label>  
+				  <input type="tel" name="phone" id="1" placeholder="800-555-0199" requied>,  
+				  <label for="2">Email:  </label>
+				  <input type="email" name="email" id="2" placeholder="name@example.com" required>,     
+				  <label for="3">LinkedIn:  </label>   
+				  <input type="url" name="website" id="3" placeholder="http://linkedin.com" required>   
+			 </form>
+
+			  <br>
+			  <hr>
+
+			  <h4>Applicant's Employer Information</h4>
+			 <form>
+			  <input type="text" name="employer" placeholder="Employer"><br>
+			  <input type="text" name="empStreet" placeholder="Street Address">  
+			  <input type="text" name="empCity" placeholder="City">  
+			  <input type="text" name="empState" placeholder="State">
+			  <input type="text" name="empZip" placeholder="Zip Code">
+			 </form>
+			 	<br>
+			  <hr>
+
+			 <h4>Loan Information</h4>
+	
+				<form name="myform">
+					<select name="loanAmountMenu">
+					<option value="select">Select Loan Type</option>
+					<option value="commercial">Commercial</option>
+					<option value="realestate">Real estate</option>
+					<option value="personal">Personal</option>
+					<option value="mortgage">Morgage</option>
+					</select>
+				</form>
+					<br>
+				<form>
+			  	<input type="text" name="loanamount" placeholder="Total Loan Amount"><br>
+ 				</form>
+ 					<br>
+				<form>
+					Chooose length of the loan:
+					<br>
+				  <input type="radio" name="loanTime" value="5yr"> 5 years<br>
+				  <input type="radio" name="loanTime" value="15yr"> 15 years<br>
+				  <input type="radio" name="loanTime" value="30yr"> 30 years
+				</form>
+					<br>
+ 				<form action="/action_page.php">
+				  <input type="checkbox" name="loan" value="payment"> I have a down payment<br>
+				  <input type="checkbox" name="loan" value="outState"> Out-of-state resident<br>
+				  <input type="checkbox" name="loan" value="married"> Married <br>
+				  <input type="checkbox" name="loan" value="cosigned"> Loan will be co-signed<br>
+				</form>
+					<br>
+					<hr>
+				<h4>Additional Comments</h4>
+					<textarea cols="100" rows="10">
+					
+					</textarea>
+
+					<br><br><br>
+					<br><br><br>
+
+
+
+
+
+	</body>
+</html>
+
+  
+    
+
+
+
