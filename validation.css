@@ -1,0 +1,16 @@
+.validate input:focus:required:valid {
+    background: #008000;
+}
+
+.validate input:focus:required:invalid {
+  background-color: #FF0000;
+}
+
+.validate input:focus:optional {
+	background-color: #fff;
+}
+
+/*.validate {
+	display: inline;
+}*/
+
